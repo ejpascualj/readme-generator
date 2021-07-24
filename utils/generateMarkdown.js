@@ -12,7 +12,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return `\n* [License](#license)\n`;
+    return `* [License](#license)\n`;
   } else {
     return '';
   }
@@ -22,11 +22,11 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
-    return `## License
+  return `## License
 
-    Licensed under the ${license} license.
+  Licensed under the ${license} license.
 
-    `;
+  `;
   } else {
     return '';
   }
@@ -34,44 +34,48 @@ function renderLicenseSection(license) {
 
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return ` # ${data.title}
-  ${renderLicenseBadge(data.license)}
+return `# ${data.title}
+${renderLicenseBadge(data.license)}
 
 
-  ## Description
+## Description
 
-  ${data.description}
+${data.description}
 
-  ## Table of Contents
+## Table of Contents
 
-  * [Installation](#installation)
-  * [Usage](#usage)
-  ${renderLicenseLink(data.license)}
-  * [Contributing](#contributing)
-  * [Tests](#tests)
-  * [Questions](#questions)
+* [Installation](#installation)
+* [Usage](#usage)
+${renderLicenseLink(data.license)}
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+
+
+## Installation
+
+${data.installation}
+
+## Usage
   
-  ## Installation
+${data.usage}
+
+
+${renderLicenseSection(data.license)}
+
+
+## Contributing
   
-  ${data.installation}
+${data.contribution}
 
-  ## Usage
-  
-  ${data.usage}
+## Tests
 
-  ${renderLicenseSection(data.license)}
+${data.test}
 
-  ## Contributing
-  
-  ${data.contribution}
+## Questions
 
-  ## Tests
-
-
-  ## Questions
-
-  For questions, please contact ${data.email}.
-  For other projects, visit: [${data.username}](https://github.com/${data.github})
+For questions, please contact ${data.email}.
+For other projects, visit: [${data.username}](https://github.com/${data.github})
 `;
 }
 
