@@ -12,6 +12,11 @@
 
 ![ReadMe Generator app demo.](./assets/)
 
+
+## Installation and Deployment
+
+
+
 ## Development & Features
 
 The technologies used for this development include: 
