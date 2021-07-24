@@ -10,7 +10,7 @@ README Generator is a command-line application that dynamically generates README
 ### Links
 
 * Github Repository: https://github.com/ejpascualj/readme-generator
-* Demo Video: https://drive.google.com/file/d/1sVRCr3qryIR-NlFQurSKKux-3Mc8qsen/view
+* Demo Video: https://drive.google.com/file/d/1pTwWj2slm6Y2reSavddfMFo3Im3nmjGB/view
 
 ## Application Demo
 
