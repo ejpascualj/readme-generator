@@ -28,6 +28,12 @@ const questions = [
         message: "Enter usage information"
     },
     {
+        type: "list",
+        name: "license",
+        message: "Select the type of license",
+        choices: ["None", "MIT", "Apache 2.0", "GPL 3.0", "BSD 3", "MPL 2.0"]
+    },
+    {
         type: "input",
         name: "contribution",
         message: "Enter contribution guidelines"
@@ -36,13 +42,7 @@ const questions = [
         type: "input",
         name: "test",
         message: "Enter test instructions"
-    },
-    {
-        type: "list",
-        name: "license",
-        message: "Select the type of license",
-        choices: ["None", "MIT", "Apache 2.0", "GPL 3.0", "BSD 3", "MPL 2.0"]
-    },
+    },    
     {
         type: "input",
         name: "username",
